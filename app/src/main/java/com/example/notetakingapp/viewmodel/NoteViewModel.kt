@@ -9,7 +9,8 @@ import kotlinx.coroutines.launch
 
 class NoteViewModel(
     app: Application,
-    private val noteRepository: NoteRepository) : AndroidViewModel(app) {
+    private val noteRepository: NoteRepository) :
+    AndroidViewModel(app) {
 
     fun addNote(note: Note) =
         viewModelScope.launch { noteRepository.insertNote(note) }
