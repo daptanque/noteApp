@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.example.notetakingapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.notetakingapp"
@@ -58,7 +58,8 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.1")
 
     //coroutines
-    implementation("org.jetbrains.kotlinx-coroutines-android:1.6.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation("androidx.room:room-ktx:2.6.1")
 
     //navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")

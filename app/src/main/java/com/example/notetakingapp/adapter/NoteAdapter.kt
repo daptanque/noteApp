@@ -51,7 +51,7 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>(){
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val currentNote = differ.currentList[position]
-,
+
         holder.itemBinding.tvNoteTitle.text = currentNote.noteTitle
         holder.itemBinding.tvNoteBody.text = currentNote.noteBody
 
